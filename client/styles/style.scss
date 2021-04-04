@@ -1,0 +1,9 @@
+@use "./config/resets";
+@use "./config/globals";
+
+//components
+@use "./components/navbar";
+
+//layouts
+@use "./layouts/contact";
+@use "./layouts/gallery";
