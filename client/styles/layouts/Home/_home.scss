@@ -1,0 +1,19 @@
+@use "./header";
+
+.Home {
+  &--about {
+    figure {
+      box-shadow: 0 0 10px silver;
+      padding: 10px;
+      overflow: hidden !important;
+
+      img {
+        transition: all 0.7s ease-in;
+      }
+
+      &:hover img {
+        transform: scale(1.2);
+      }
+    }
+  }
+}

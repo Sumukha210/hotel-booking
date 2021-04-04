@@ -11,10 +11,10 @@ L.Marker.prototype.options.icon = DefaultIcon;
 
 const Map = () => {
   return (
-    <div className="Map">
+    <div className="Map my-4">
       <MapContainer
         center={[14.3812, 75.1022]}
-        zoom={13}
+        zoom={12}
         scrollWheelZoom={true}
         style={{ height: "70vh", width: "100%" }}>
         <TileLayer
@@ -22,7 +22,9 @@ const Map = () => {
           url="https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png"
         />
         <Marker position={[14.3812, 75.1022]}>
-          <Popup>Perl hotel</Popup>
+          <Popup>
+            <h2 className="font-weight-bold">Perl Hotel</h2>
+          </Popup>
         </Marker>
       </MapContainer>
     </div>

@@ -8,7 +8,7 @@ const ContactInfo = () => {
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, quis.
       </p>
 
-      <Table borderless={true}>
+      <Table borderless={true} responsive>
         <tbody>
           <ContactAddress
             title="address"

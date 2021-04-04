@@ -3,7 +3,10 @@
 
 //components
 @use "./components/navbar";
+@use "./components/AvailabilityChecker";
 
 //layouts
 @use "./layouts/contact";
 @use "./layouts/gallery";
+@use "./layouts/authForm";
+@use "./layouts/Home/home";

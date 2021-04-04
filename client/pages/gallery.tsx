@@ -10,12 +10,12 @@ const Gallery = () => {
       <CustomHeader title="our gallery" />
       <Container>
         <Row className="justify-content-start align-items-center my-5">
-          {images.map(url => (
+          {HotelImages.map(url => (
             <Col md={6} lg={4} key={url}>
               <div className="Gallery__card mb-3">
                 <NextImage
                   layout="responsive"
-                  height="100%"
+                  height={130}
                   width="100%"
                   src={url}
                   alt={url}
@@ -31,7 +31,7 @@ const Gallery = () => {
 
 export default Gallery;
 
-const images = [
+export const HotelImages = [
   "/images/hotel-(1).jpg",
   "/images/hotel-(2).jpg",
   "/images/hotel-(3).jpg",

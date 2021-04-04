@@ -1,8 +1,11 @@
+import About from "../components/common/CustomAbout";
+import Header from "../components/Layouts/Home/Header";
+
 const Home = () => {
   return (
-    <div>
-      <h1>this is home</h1>
-      <p>this is para</p>
+    <div className="Home">
+      <Header />
+      <About />
     </div>
   );
 };

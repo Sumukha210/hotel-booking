@@ -14,7 +14,10 @@ const CustomBtn: React.FC<ICustomBtn> = ({ btnFun, BtnType, name }) => {
   };
 
   return (
-    <Button className="customBtn" onClick={handleBtn} type={BtnType}>
+    <Button
+      className={`customBtn ${BtnType === "submit" && "d-block w-100 "}`}
+      onClick={handleBtn}
+      type={BtnType}>
       {name}
     </Button>
   );

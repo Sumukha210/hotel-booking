@@ -6,30 +6,30 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import ContactInfo from "../components/Layouts/contact/ContactInfo";
 import ContactForm from "../components/Layouts/contact/ContactForm";
+import LoadingSpinner from "../components/common/LoadingSpinner";
 
 const Contact = () => {
-  // const Map = useMemo(
-  //   () =>
-  //     dynamic(() => import("../components/Layouts/contact/Map"), {
-  //       loading: () => <h3 className="text-center">Loading....</h3>,
-  //       ssr: false,
-  //     }),
-  //   []
-  // );
+  const Map = useMemo(
+    () =>
+      dynamic(() => import("../components/Layouts/contact/Map"), {
+        loading: () => <LoadingSpinner />,
+        ssr: false,
+      }),
+    []
+  );
 
   return (
-    <div className="contact mb-5">
-      {/* <CustomHeader title="contact us" /> */}
+    <div className="contact mt-5">
       <Container>
         <Row className="justify-content-between  align-items-start">
-          <Col lg={5}>
+          <Col sm={12} lg={5}>
             <ContactInfo />
           </Col>
-          <Col lg={7}>
+          <Col sm={12} lg={7}>
             <ContactForm />
           </Col>
         </Row>
-        {/* <Map /> */}
+        <Map />
       </Container>
     </div>
   );
