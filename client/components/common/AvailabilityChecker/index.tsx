@@ -17,7 +17,7 @@ const AvailabilityChecker = () => {
   };
 
   return (
-    <div className="AvailabilityChecker">
+    <div className="AvailabilityChecker text-capitalize">
       <h2 className="AvailabilityChecker__heading header-2">
         check Availability
       </h2>

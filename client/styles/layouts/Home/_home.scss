@@ -1,18 +1,37 @@
 @use "./header";
+@use "../../config/variables" as var;
 
 .Home {
-  &--about {
-    figure {
-      box-shadow: 0 0 10px silver;
-      padding: 10px;
-      overflow: hidden !important;
+  //about section
 
-      img {
-        transition: all 0.7s ease-in;
+  //services
+  .card {
+    border: none !important;
+    transition: all 0.3s ease;
+
+    &-header {
+      border: none !important;
+      font-size: 2.5rem;
+      background-color: transparent !important;
+      svg {
+        fill: var.$primary-color;
+        color: var.$primary-color;
+
+        path {
+          stroke: var.$primary-color;
+        }
       }
+    }
 
-      &:hover img {
-        transform: scale(1.2);
+    &:hover {
+      background-color: var.$primary-color;
+      color: white;
+      svg {
+        color: white;
+        fill: white;
+        path {
+          stroke: white;
+        }
       }
     }
   }

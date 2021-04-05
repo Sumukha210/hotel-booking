@@ -11,11 +11,11 @@ const CustomAboutUs = () => {
   const handleReadMore = () => push("/about");
 
   return (
-    <div className="Home--about my-5">
+    <div className="aboutUs my-5">
       <Container>
         <Row className="justify-content-between align-items-center ">
           <Col lg={6}>
-            <p className="text-secondary font-weight-bold">About us</p>
+            <p className="primary-color-font">About us</p>
             <h2 className="header-2 font-weight-bold mb-3">Perl Hotel</h2>
             <p>
               perl.com is a leading online accommodation site. We’re passionate

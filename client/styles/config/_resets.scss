@@ -36,3 +36,9 @@ body {
 .header-2 {
   font-size: clamp(1.5rem, 6vw, 2.25rem) !important;
 }
+
+p.primary-color-font {
+  color: $primary-color;
+  font-weight: bold;
+  text-transform: capitalize;
+}
