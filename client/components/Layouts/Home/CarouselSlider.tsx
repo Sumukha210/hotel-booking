@@ -1,5 +1,5 @@
 import Carousel from "react-bootstrap/Carousel";
-import { HotelImages } from "../../../pages/gallery";
+import { HotelImages } from "../../common/HotelImages";
 
 const CarouselSlider = () => {
   return (

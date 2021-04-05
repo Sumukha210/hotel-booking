@@ -1,4 +1,5 @@
 import Table from "react-bootstrap/Table";
+import TableData from "../../common/TableDate";
 
 const ContactInfo = () => {
   return (
@@ -10,13 +11,13 @@ const ContactInfo = () => {
 
       <Table borderless={true} responsive>
         <tbody>
-          <ContactAddress
+          <TableData
             title="address"
             ans="sorab(tq),shimoga(dist),karnataka,India"
           />
-          <ContactAddress title="phone" ans="8618174796" />
-          <ContactAddress title="email" ans="sumukhakb210@gmail.com" />
-          <ContactAddress title="fax" ans="+(12) 345 67890" />
+          <TableData title="phone" ans="8618174796" />
+          <TableData title="email" ans="sumukhakb210@gmail.com" />
+          <TableData title="fax" ans="+(12) 345 67890" />
         </tbody>
       </Table>
     </div>
@@ -24,17 +25,3 @@ const ContactInfo = () => {
 };
 
 export default ContactInfo;
-
-interface IAddress {
-  title: string;
-  ans: string;
-}
-
-const ContactAddress: React.FC<IAddress> = ({ title, ans }) => {
-  return (
-    <tr className="">
-      <td className="text-secondary text-capitalize">{title}</td>
-      <td className=" ml-4 font-weight-bold">{ans}</td>
-    </tr>
-  );
-};

@@ -2,7 +2,6 @@ import { ReactNode } from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Service from "./Service";
-import { GrServices } from "react-icons/gr";
 import { MdLocationOn } from "react-icons/md";
 import { IoFastFoodSharp, IoWineSharp } from "react-icons/io5";
 import { CgTimelapse, CgSmartHomeWashMachine } from "react-icons/cg";
@@ -10,16 +9,14 @@ import { FaBed } from "react-icons/fa";
 
 const Services = () => {
   return (
-    <div className="Home--services my-5">
+    <div className="Home--services my-5 ">
       <Container>
         <p className="primary-color-font">what we do</p>
-        <h2 className="heading-2 font-weight-bold text-capitalize">
-          discover our services
-        </h2>
+        <h2 className="header-2  text-capitalize">discover our services</h2>
 
         <Row className="mt-5 align-items-center text-capitalize">
           {ServiceOptions.map(({ name, Icon }: IServices) => (
-            <Service name={name} Icon={Icon} />
+            <Service name={name} Icon={Icon} key={name} />
           ))}
         </Row>
       </Container>

@@ -9,9 +9,7 @@ const Service = ({ name, Icon }: IServices) => {
         <Card className="mb-4">
           <Card.Header className="text-center">{Icon}</Card.Header>
           <Card.Body>
-            <Card.Title as="h4" className="font-weight-bold">
-              {name}
-            </Card.Title>
+            <Card.Title as="h4">{name}</Card.Title>
             <Card.Text className="font-weight-normal">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna.
