@@ -4,10 +4,27 @@ import Col from "react-bootstrap/Col";
 import NextImage from "next/image";
 import { HotelImages } from "../components/common/HotelImages";
 import CustomHeader from "../components/common/Header";
+import { useState } from "react";
+import ImageModal from "../components/Layouts/Gallery/ImageModal";
 
 const Gallery = () => {
+  const [modalImg, setModalImg] = useState("");
+  const [show, setShow] = useState(false);
+
+  const handleCloseModal = () => {
+    setShow(false);
+    setModalImg("");
+  };
+
+  const handleImage = (url: string) => {
+    setShow(true);
+    setModalImg(url);
+  };
+
   return (
     <div className="Gallery">
+      <ImageModal src={modalImg} show={show} handleClose={handleCloseModal} />
+
       <CustomHeader title="our gallery" />
       <Container>
         <Row className="justify-content-start align-items-center my-5">
@@ -20,6 +37,7 @@ const Gallery = () => {
                   width="100%"
                   src={url}
                   alt={url}
+                  onClick={() => handleImage(url)}
                 />
               </div>
             </Col>
