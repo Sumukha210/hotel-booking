@@ -1,11 +1,13 @@
 import CustomHeader from "../components/common/Header";
+import Rooms from "../components/Layouts/Rooms";
 
-const Rooms = () => {
+const RoomsPage = () => {
   return (
-    <div>
+    <>
       <CustomHeader title="our rooms" />
-    </div>
+      <Rooms />
+    </>
   );
 };
 
-export default Rooms;
+export default RoomsPage;

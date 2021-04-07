@@ -10,7 +10,7 @@ const ExploreGallery = () => {
   const handleBtn = () => push("/gallery");
 
   return (
-    <div className="Home--exploreGallery my-5">
+    <div className="Home--exploreGallery " style={{ margin: "6rem 0" }}>
       <Container>
         <Row className="align-items-center">
           <Col lg={6} className="mb-3 mb-md-0">

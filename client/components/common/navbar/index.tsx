@@ -26,7 +26,7 @@ const NavBar = () => {
     <div className="NavBar">
       <Navbar bg="light" expand="md" expanded={navOpen}>
         <Container>
-          <Navbar.Brand onClick={() => push("/")}>perl</Navbar.Brand>
+          <Navbar.Brand onClick={() => push("/")}>perl.</Navbar.Brand>
           <Navbar.Toggle
             aria-controls="basic-navbar-nav"
             onClick={() => setNavOpen(navOpen ? false : "expanded")}

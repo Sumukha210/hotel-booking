@@ -15,7 +15,7 @@ const WhyChooseUs = () => {
     <div className="Home--whyChooseUs my-5">
       <Container>
         <Row className="justify-content-center align-items-center text-center py-5">
-          <Col md={10} lg={8}>
+          <Col md={10} lg={8} className="py-4">
             <p className="primary-color-font">why choose us</p>
             <h2 className="pt-1 pb-4 text-light font-weight-bold">
               Contact us now to get the latest deals and for the next booking

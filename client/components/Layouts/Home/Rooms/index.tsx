@@ -3,7 +3,7 @@ import Room from "./Room";
 
 const Rooms = () => {
   return (
-    <div className="my-5 mx-2 rooms">
+    <div className="my-5 mx-2 Home--rooms">
       <Row>
         {roomInfo.map(
           ({ name, price, size, bed, services, img }: IRoomInfo, i) => (
@@ -34,7 +34,7 @@ export interface IRoomInfo {
   img: string;
 }
 
-const roomInfo: IRoomInfo[] = [
+export const roomInfo: IRoomInfo[] = [
   {
     name: "deluxe room",
     price: "200",
@@ -50,6 +50,54 @@ const roomInfo: IRoomInfo[] = [
     bed: "king beds",
     services: "wifi,television,batroom",
     img: "/images/hotel-(3).jpg",
+  },
+  {
+    name: "deluxe room",
+    price: "200",
+    size: "30 ft",
+    bed: "king beds",
+    services: "wifi,television,batroom",
+    img: "/images/hotel-(4).jpg",
+  },
+  {
+    name: "deluxe room",
+    price: "200",
+    size: "30 ft",
+    bed: "king beds",
+    services: "wifi,television,batroom",
+    img: "/images/hotel-(5).jpg",
+  },
+  {
+    name: "deluxe room",
+    price: "200",
+    size: "30 ft",
+    bed: "king beds",
+    services: "wifi,television,batroom",
+    img: "/images/hotel-(4).jpg",
+  },
+  {
+    name: "deluxe room",
+    price: "200",
+    size: "30 ft",
+    bed: "king beds",
+    services: "wifi,television,batroom",
+    img: "/images/hotel-(5).jpg",
+  },
+  {
+    name: "deluxe room",
+    price: "200",
+    size: "30 ft",
+    bed: "king beds",
+    services: "wifi,television,batroom",
+    img: "/images/hotel-(4).jpg",
+  },
+  {
+    name: "deluxe room",
+    price: "200",
+    size: "30 ft",
+    bed: "king beds",
+    services: "wifi,television,batroom",
+    img: "/images/hotel-(5).jpg",
   },
   {
     name: "deluxe room",

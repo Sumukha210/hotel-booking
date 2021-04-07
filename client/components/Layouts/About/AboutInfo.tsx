@@ -1,11 +1,11 @@
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import CustomBtn from "./CustomBtn";
 import { useRouter } from "next/router";
 import NextImage from "next/image";
+import CustomBtn from "../../common/CustomBtn";
 
-const CustomAboutUs = () => {
+const AboutInfo = () => {
   const { push } = useRouter();
 
   const handleReadMore = () => push("/about");
@@ -61,4 +61,4 @@ const CustomAboutUs = () => {
   );
 };
 
-export default CustomAboutUs;
+export default AboutInfo;

@@ -8,6 +8,8 @@ interface NavLinksProps {
 const NavLinks: React.FC<NavLinksProps> = ({ handleCloseNav }) => {
   const { pathname } = useRouter();
 
+  const isAuthenticated = true;
+
   return (
     <>
       {NavLinkOptions.map(({ name, path }: INavLinks) => (
@@ -19,6 +21,16 @@ const NavLinks: React.FC<NavLinksProps> = ({ handleCloseNav }) => {
           </a>
         </Link>
       ))}
+
+      {isAuthenticated && (
+        <Link href="/dashboard">
+          <a
+            className={`nav-link text-dark ${pathname === "/dashboard"}`}
+            onClick={() => handleCloseNav()}>
+            Dashboard
+          </a>
+        </Link>
+      )}
     </>
   );
 };
@@ -30,7 +42,7 @@ export interface INavLinks {
   path: string;
 }
 
-const NavLinkOptions: INavLinks[] = [
+export const NavLinkOptions: INavLinks[] = [
   { name: "home", path: "/" },
   { name: "about", path: "/about" },
   { name: "rooms", path: "/rooms" },

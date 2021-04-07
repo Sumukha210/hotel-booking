@@ -47,3 +47,10 @@ input.form-control {
   height: 50px !important;
   outline: none !important;
 }
+
+.starRating {
+  svg {
+    font-size: 1.4rem !important;
+    fill: #ffb007;
+  }
+}
