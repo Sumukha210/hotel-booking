@@ -3,7 +3,7 @@ import Modal from "react-bootstrap/Modal";
 export interface IImageModal {
   src: string;
   show: boolean;
-  handleClose: Function;
+  handleClose(): void;
 }
 
 const ImageModal: React.FC<IImageModal> = ({ src, show, handleClose }) => {
