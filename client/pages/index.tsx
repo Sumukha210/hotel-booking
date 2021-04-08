@@ -1,4 +1,4 @@
-import About from "../components/Layouts/About/AboutInfo";
+import About from "../components/Layouts/about/AboutInfo";
 import Header from "../components/Layouts/Home/Header";
 import Services from "../components/Layouts/Home/Services";
 import SpecialRooms from "../components/Layouts/Home/Rooms";

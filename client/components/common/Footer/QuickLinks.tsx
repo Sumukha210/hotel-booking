@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { INavLinks, NavLinkOptions } from "../NavBar/NavLinks";
+import { INavLinks, NavLinkOptions } from "../navbar/NavLinks";
 
 const QuickLinks = () => {
   return (
