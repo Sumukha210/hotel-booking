@@ -5,7 +5,7 @@ import NextImage from "next/image";
 import TableData from "../../common/TableDate";
 import { FaRupeeSign } from "react-icons/fa";
 import CustomBtn from "../../common/CustomBtn";
-import { IRoomInfo } from "../home/featuredRooms";
+import { IRoomInfo } from "../home/featuredRooms/index";
 // import { IRoomInfo } from "../home/rooms";
 
 export interface IRoom extends IRoomInfo {
