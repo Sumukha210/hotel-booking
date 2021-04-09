@@ -1,10 +1,10 @@
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import AvailabilityChecker from "../../common/availabilityChecker";
 import CustomBtn from "../../common/CustomBtn";
 import { useRouter } from "next/router";
 import CarouselSlider from "./CarouselSlider";
+import AvailabilityChecker from "../../common/availability_checker";
 
 const Header = () => {
   const { push } = useRouter();
