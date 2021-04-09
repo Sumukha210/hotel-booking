@@ -3,7 +3,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 // import { roomInfo } from "../home/rooms";
 import Room, { IRoom } from "./Room";
-import { roomInfo } from "../home/featuredRooms";
+import { roomInfo } from "../home/featuredRooms/index";
 
 const Rooms = () => {
   return (
