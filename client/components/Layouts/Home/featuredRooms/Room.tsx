@@ -1,10 +1,10 @@
 import NextImage from "next/image";
 import Col from "react-bootstrap/Col";
 import Table from "react-bootstrap/Table";
-import { IRoomInfo } from ".";
 import TableData from "../../../common/TableDate";
 import { FaRupeeSign } from "react-icons/fa";
 import CustomBtn from "../../../common/CustomBtn";
+import { IRoomInfo } from ".";
 
 const Room = ({ name, img, price, size, bed, services }: IRoomInfo) => {
   return (

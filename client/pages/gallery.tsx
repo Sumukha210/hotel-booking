@@ -5,7 +5,7 @@ import NextImage from "next/image";
 import { HotelImages } from "../components/common/HotelImages";
 import CustomHeader from "../components/common/Header";
 import { useState } from "react";
-import ImageModal from "../components/Layouts/gallery/ImageModal";
+import ImageModal from "../components/layouts/gallery/ImageModal";
 
 const Gallery = () => {
   const [modalImg, setModalImg] = useState("");

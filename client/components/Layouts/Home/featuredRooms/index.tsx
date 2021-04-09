@@ -5,8 +5,9 @@ const Rooms = () => {
   return (
     <div className="my-5 mx-2 Home--rooms">
       <Row>
-        {roomInfo.map(
-          ({ name, price, size, bed, services, img }: IRoomInfo, i) => (
+        {roomInfo
+          .slice(0, 4)
+          .map(({ name, price, size, bed, services, img }: IRoomInfo, i) => (
             <Room
               key={i}
               name={name}
@@ -16,8 +17,7 @@ const Rooms = () => {
               img={img}
               size={size}
             />
-          )
-        )}
+          ))}
       </Row>
     </div>
   );

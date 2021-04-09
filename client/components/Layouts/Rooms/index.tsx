@@ -1,8 +1,9 @@
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import { roomInfo } from "../Home/Rooms/index";
+// import { roomInfo } from "../home/rooms";
 import Room, { IRoom } from "./Room";
+import { roomInfo } from "../home/featuredRooms";
 
 const Rooms = () => {
   return (

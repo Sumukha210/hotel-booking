@@ -1,4 +1,3 @@
-import { IRoomInfo } from "../Home/Rooms/index";
 import Card from "react-bootstrap/Card";
 import Col from "react-bootstrap/Col";
 import Table from "react-bootstrap/Table";
@@ -6,6 +5,8 @@ import NextImage from "next/image";
 import TableData from "../../common/TableDate";
 import { FaRupeeSign } from "react-icons/fa";
 import CustomBtn from "../../common/CustomBtn";
+import { IRoomInfo } from "../home/featuredRooms";
+// import { IRoomInfo } from "../home/rooms";
 
 export interface IRoom extends IRoomInfo {
   id?: string;

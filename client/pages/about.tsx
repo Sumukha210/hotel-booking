@@ -1,7 +1,7 @@
 import CustomHeader from "../components/common/Header";
-import Reviews from "../components/common/Reviews";
-import AboutInfo from "../components/Layouts/about/AboutInfo";
-import WhyChooseUs from "../components/Layouts/Home/WhyChooseUs";
+import Reviews from "../components/common/reviews";
+import AboutInfo from "../components/layouts/about/AboutInfo";
+import WhyChooseUs from "../components/layouts/home/WhyChooseUs";
 
 const About = () => {
   return (

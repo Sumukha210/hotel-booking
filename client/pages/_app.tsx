@@ -2,7 +2,7 @@ import { AppProps } from "next/app";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../styles/style.scss";
 import NavBar from "../components/common/navbar";
-import Footer from "../components/common/Footer";
+import Footer from "../components/common/footer";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (

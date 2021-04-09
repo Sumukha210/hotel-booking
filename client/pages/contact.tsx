@@ -4,14 +4,14 @@ import { useMemo } from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import ContactInfo from "../components/Layouts/contact/ContactInfo";
-import ContactForm from "../components/Layouts/contact/ContactForm";
+import ContactInfo from "../components/layouts/contact/ContactInfo";
+import ContactForm from "../components/layouts/contact/ContactForm";
 import LoadingSpinner from "../components/common/LoadingSpinner";
 
 const Contact = () => {
   const Map = useMemo(
     () =>
-      dynamic(() => import("../components/Layouts/contact/Map"), {
+      dynamic(() => import("../components/layouts/contact/Map"), {
         loading: () => <LoadingSpinner />,
         ssr: false,
       }),

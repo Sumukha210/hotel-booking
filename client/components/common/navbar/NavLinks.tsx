@@ -8,7 +8,7 @@ interface NavLinksProps {
 const NavLinks: React.FC<NavLinksProps> = ({ handleCloseNav }) => {
   const { pathname } = useRouter();
 
-  const isAuthenticated = true;
+  const isAuthenticated = false;
 
   return (
     <>

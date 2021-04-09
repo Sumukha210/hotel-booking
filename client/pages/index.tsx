@@ -1,10 +1,10 @@
-import About from "../components/Layouts/about/AboutInfo";
-import Header from "../components/Layouts/Home/Header";
-import Services from "../components/Layouts/Home/Services";
-import SpecialRooms from "../components/Layouts/Home/Rooms";
-import WhyChooseUs from "../components/Layouts/Home/WhyChooseUs";
-import ExploreGallery from "../components/Layouts/Home/ExploreGallery";
-import Reviews from "../components/common/Reviews";
+import About from "../components/layouts/about/AboutInfo";
+import Header from "../components/layouts/home/Header";
+import WhyChooseUs from "../components/layouts/home/WhyChooseUs";
+import ExploreGallery from "../components/layouts/home/ExploreGallery";
+import Reviews from "../components/common/reviews";
+import FeaturedRooms from "../components/layouts/home/featuredRooms";
+import Services from "../components/layouts/home/services";
 
 const Home = () => {
   return (
@@ -12,7 +12,7 @@ const Home = () => {
       <Header />
       <About />
       <Services />
-      <SpecialRooms />
+      <FeaturedRooms />
       <Reviews />
       <WhyChooseUs />
       <ExploreGallery />
