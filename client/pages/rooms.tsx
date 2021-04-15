@@ -1,5 +1,5 @@
-import CustomHeader from "../components/common/Header";
-import Rooms from "../components/layouts/rooms";
+import CustomHeader from "../Components/Common/Header";
+import Rooms from "../Components/Layouts/Rooms";
 
 const RoomsPage = () => {
   return (

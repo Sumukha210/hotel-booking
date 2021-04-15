@@ -1,10 +1,10 @@
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
-import NavLinks from "./NavLinks";
 import { useRouter } from "next/router";
 import CustomBtn from "../CustomBtn";
 import { useState } from "react";
+import NavLinks from "./NavLinks";
 
 const NavBar = () => {
   const { push } = useRouter();

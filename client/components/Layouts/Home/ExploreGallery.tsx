@@ -1,7 +1,7 @@
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import CustomBtn from "../../common/CustomBtn";
+import CustomBtn from "../../Common/CustomBtn";
 import { useRouter } from "next/router";
 
 const ExploreGallery = () => {

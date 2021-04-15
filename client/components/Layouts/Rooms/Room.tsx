@@ -2,11 +2,10 @@ import Card from "react-bootstrap/Card";
 import Col from "react-bootstrap/Col";
 import Table from "react-bootstrap/Table";
 import NextImage from "next/image";
-import TableData from "../../common/TableDate";
+import TableData from "../../Common/TableDate";
 import { FaRupeeSign } from "react-icons/fa";
-import CustomBtn from "../../common/CustomBtn";
-import { IRoomInfo } from "../home/featuredRooms";
-// import { IRoomInfo } from "../home/rooms";
+import CustomBtn from "../../Common/CustomBtn";
+import { IRoomInfo } from "../Home/FeaturedRooms/Interfaces";
 
 export interface IRoom extends IRoomInfo {
   id?: string;

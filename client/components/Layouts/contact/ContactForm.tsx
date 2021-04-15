@@ -1,5 +1,5 @@
 import Form from "react-bootstrap/Form";
-import CustomBtn from "../../common/CustomBtn";
+import CustomBtn from "../../Common/CustomBtn";
 
 const ContactForm = () => {
   return (

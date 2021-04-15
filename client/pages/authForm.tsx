@@ -3,8 +3,8 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Form from "react-bootstrap/Form";
-import CustomBtn from "../components/common/CustomBtn";
-import Extra from "../components/layouts/authForm/Extra";
+import CustomBtn from "../Components/Common/CustomBtn";
+import Extra from "../Components/Layouts/AuthForm/Extra";
 
 const AuthForm = () => {
   const [isLogin, setIsLogin] = useState(true);

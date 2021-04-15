@@ -1,4 +1,5 @@
 import Row from "react-bootstrap/Row";
+import { IRoomInfo } from "./Interfaces";
 import Room from "./Room";
 
 const Rooms = () => {
@@ -24,15 +25,6 @@ const Rooms = () => {
 };
 
 export default Rooms;
-
-export interface IRoomInfo {
-  name: string;
-  price: string;
-  size: string;
-  bed: string;
-  services: string;
-  img: string;
-}
 
 export const roomInfo: IRoomInfo[] = [
   {

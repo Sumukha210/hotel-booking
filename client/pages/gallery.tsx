@@ -2,10 +2,10 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import NextImage from "next/image";
-import { HotelImages } from "../components/common/HotelImages";
-import CustomHeader from "../components/common/Header";
+import { HotelImages } from "../Components/Common/HotelImages";
+import CustomHeader from "../Components/Common/Header";
 import { useState } from "react";
-import ImageModal from "../components/layouts/gallery/ImageModal";
+import ImageModal from "../Components/Layouts/Gallery/ImageModal";
 
 const Gallery = () => {
   const [modalImg, setModalImg] = useState("");

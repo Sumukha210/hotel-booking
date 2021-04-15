@@ -1,6 +1,6 @@
 import { useRouter } from "next/router";
 import { useEffect } from "react";
-import LoadingSpinner from "../components/common/LoadingSpinner";
+import LoadingSpinner from "../Components/Common/LoadingSpinner";
 
 const Dashboard = () => {
   const isAuthenticated = false;

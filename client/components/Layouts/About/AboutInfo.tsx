@@ -3,7 +3,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import { useRouter } from "next/router";
 import NextImage from "next/image";
-import CustomBtn from "../../common/CustomBtn";
+import CustomBtn from "../../Common/CustomBtn";
 
 const AboutInfo = () => {
   const { push } = useRouter();

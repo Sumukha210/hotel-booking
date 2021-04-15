@@ -1,5 +1,5 @@
 import Table from "react-bootstrap/Table";
-import TableData from "../../common/TableDate";
+import TableData from "../../Common/TableDate";
 
 const ContactInfo = () => {
   return (
